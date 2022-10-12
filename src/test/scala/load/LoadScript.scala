@@ -34,7 +34,7 @@ class LoadScript extends Simulation {
 
   // Браузинг сайта (посещение страниц из списка)
   val browse =
-    repeat(3, "i") {
+    repeat(4, "i") {
       exec(http(s"Page $pages(#{i})").get(s"$pages(#{i})")).pause(1)
     }
 
