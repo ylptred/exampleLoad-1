@@ -35,13 +35,13 @@ class LoadScript extends Simulation {
     }
 
 
-  val edit_feeder = csv("auth.csv").random
+  val auth_feeder = csv("auth.csv").random
 
   val seller_auth =
     tryMax(2) {
       exec(http("Auth Home").get("/auth"))
         .pause(1)
-        .feed(edit_feeder)
+        .feed(auth_feeder)
         .exec(
           http("Auth")
             .post("/auth")
