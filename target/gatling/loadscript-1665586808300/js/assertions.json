@@ -1,0 +1,10 @@
+{
+  "simulation": "load.LoadScript",
+  "simulationId": "loadscript",
+  "start": 1665586808300,
+  "description": "",
+  "scenarios": ["Users", "Seller"],
+  "assertions": [
+
+  ]
+}
